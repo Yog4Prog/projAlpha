@@ -1,4 +1,4 @@
-package com.proj.alpha.empdetails;
+package com.proj.alpha;
 
 import java.util.List;
 
@@ -13,13 +13,13 @@ import com.proj.alpha.empdetails.model.EmpDetails;
 
 
 @SpringBootApplication
-public class EmpDetailsApplication  {
+public class AlphaApplication  {
 
 	@Autowired
 	EmpDetailsRepository empLoginRepo;
 	
 	public static void main(String[] args) {
-		SpringApplication.run(EmpDetailsApplication.class, args);
+		SpringApplication.run(AlphaApplication.class, args);
 	}
 
 
