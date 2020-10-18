@@ -6,6 +6,8 @@ import java.util.Date;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import com.proj.alpha.shared.model.Address;
+
 @Document(value="EmpDetails")
 public class EmpDetails {
 	
@@ -25,8 +27,22 @@ public class EmpDetails {
 	public String status;
 	public Date doj;
 	public Address address;
+	public String storeId;
 	
 	
+
+	public EmpDetails(String id, String empFirstName, String empLastName, String empPhone, String status, Date doj,
+			Address address, String storeId) {
+		super();
+		this.id = id;
+		this.empFirstName = empFirstName;
+		this.empLastName = empLastName;
+		this.empPhone = empPhone;
+		this.status = status;
+		this.doj = doj;
+		this.address = address;
+		this.storeId = storeId;
+	}
 
 	public Address getAddress() {
 		return address;
@@ -41,18 +57,7 @@ public class EmpDetails {
 	}
 	
 	
-	public EmpDetails(String id, String empFirstName, String empLastName, String empPhone, String status,
-			Address address) {
-		super();
-		this.id = id;
-		this.empFirstName = empFirstName;
-		this.empLastName = empLastName;
-		this.empPhone = empPhone;
-		this.status = status;
-		this.address = address;
-		this.doj = new Date();
-	}
-
+	
 	public String getId() {
 		return id;
 	}
@@ -84,10 +89,20 @@ public class EmpDetails {
 		this.status = status;
 	}
 
+	
+	public String getStoreId() {
+		return storeId;
+	}
+
+	public void setStoreId(String storeId) {
+		this.storeId = storeId;
+	}
+
 	@Override
 	public String toString() {
-		return "EmpDetails [id=" + id + ", empFirstName=" + empFirstName + ", empLastName=" + empLastName + ", empPhone="
-				+ empPhone + ", status=" + status + ", doj=" + doj + ", address=" + address + "]";
+		return "EmpDetails [id=" + id + ", empFirstName=" + empFirstName + ", empLastName=" + empLastName
+				+ ", empPhone=" + empPhone + ", status=" + status + ", doj=" + doj + ", address=" + address
+				+ ", storeId=" + storeId + "]";
 	}
 	
 	

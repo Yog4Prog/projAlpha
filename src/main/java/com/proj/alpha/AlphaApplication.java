@@ -8,8 +8,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import com.proj.alpha.empdetails.data.EmpDetailsRepository;
-import com.proj.alpha.empdetails.model.Address;
 import com.proj.alpha.empdetails.model.EmpDetails;
+import com.proj.alpha.shared.model.Address;
 
 
 @SpringBootApplication

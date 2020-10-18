@@ -1,4 +1,4 @@
-package com.proj.alpha.empdetails.model;
+package com.proj.alpha.shared.model;
 
 public class Address {
 
