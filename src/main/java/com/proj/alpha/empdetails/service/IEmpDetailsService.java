@@ -6,18 +6,17 @@ import java.util.Optional;
 import com.proj.alpha.empdetails.model.EmpDetails;
 
 public interface IEmpDetailsService {
-	
-	public List<EmpDetails> getAllEmpDetails();
-	
-	
-	public Optional<EmpDetails> getEmpDetailsByID(String id);
-	
-	public EmpDetails updateEmpDetails(EmpDetails empDetails);
-	
-	
-	public EmpDetails createEmpDetails(EmpDetails empDetails);
-	
-	public String deleteEmpDetails(String id);
-	
+
+	List<EmpDetails> getAllEmpDetails();
+
+	Optional<EmpDetails> getEmpDetailsByID(String id);
+
+	EmpDetails updateEmpDetails(EmpDetails empDetails);
+
+	EmpDetails createEmpDetails(EmpDetails empDetails);
+
+	String deleteEmpDetails(String id);
+
+	List<EmpDetails> getAllEmpDetailsFromStore(String storeID);
 
 }

@@ -8,6 +8,8 @@ import org.springframework.stereotype.Service;
 
 import com.proj.alpha.empdetails.data.EmpDetailsRepository;
 import com.proj.alpha.empdetails.model.EmpDetails;
+import com.proj.alpha.storedetails.data.StoreDetailsRepository;
+import com.proj.alpha.storedetails.model.StoreDetails;
 
 @Service
 public class EmpDetailsService implements IEmpDetailsService {
@@ -15,9 +17,24 @@ public class EmpDetailsService implements IEmpDetailsService {
 	@Autowired
 	EmpDetailsRepository empDetailsRepo;
 	
+	@Autowired
+	StoreDetailsRepository storeDetailsRepo;
+	
 	public List<EmpDetails> getAllEmpDetails()
 	{
 		return empDetailsRepo.findAll();
+	}
+	
+	public List<EmpDetails> getAllEmpDetailsFromStore(String storeID)
+	{
+		Optional<StoreDetails> storeDetail = storeDetailsRepo.findById(storeID);
+		
+		if(storeDetail.isPresent())
+		{
+			
+			return empDetailsRepo.findAllByStoreId(storeDetail.get().getId());
+		}
+		return null;
 	}
 	
 	public Optional<EmpDetails> getEmpDetailsByID(String id)

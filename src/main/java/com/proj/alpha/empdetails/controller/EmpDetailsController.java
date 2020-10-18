@@ -53,4 +53,12 @@ public class EmpDetailsController {
 		return empDetailsService.deleteEmpDetails(id);
 	}
 	
+	@GetMapping("/fetch/all/{storeid}")
+	List<EmpDetails> getAllEmpFromStore(@PathVariable String storeid)
+	{
+		
+		return empDetailsService.getAllEmpDetailsFromStore(storeid);
+		
+	}
+	
 }

@@ -16,11 +16,9 @@ public class EmpDetails {
 	public Date getDoj() {
 		return doj;
 	}
-
 	public void setDoj(Date doj) {
 		this.doj = doj;
 	}
-
 	public String empFirstName;
 	public String empLastName;
 	public String empPhone;
