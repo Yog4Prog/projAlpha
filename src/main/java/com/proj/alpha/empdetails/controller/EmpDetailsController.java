@@ -60,5 +60,7 @@ public class EmpDetailsController {
 		return empDetailsService.getAllEmpDetailsFromStore(storeid);
 		
 	}
+
+
 	
 }

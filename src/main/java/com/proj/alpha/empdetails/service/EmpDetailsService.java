@@ -37,12 +37,19 @@ public class EmpDetailsService implements IEmpDetailsService {
 		}
 		return null;
 	}
-	
+
+	@Override
+	public EmpDetails getEmpDetailsByLoginId(String loginId) {
+		List<EmpDetails> empDetails = empDetailsRepo.findAllByLoginId(loginId);
+		// To DO:: Ideally 1 record should be fetch, if more than 1 record is fetched then throw error.
+		return empDetails.get(0);
+	}
+
 	public Optional<EmpDetails> getEmpDetailsByID(String id)
 	{
 		return empDetailsRepo.findById(id);
 	}
-	
+
 	public EmpDetails updateEmpDetails(EmpDetails empDetails)
 	{
 		

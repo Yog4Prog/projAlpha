@@ -19,4 +19,7 @@ public interface IEmpDetailsService {
 
 	List<EmpDetails> getAllEmpDetailsFromStore(String storeID);
 
+	EmpDetails getEmpDetailsByLoginId(String loginId);
+
+
 }

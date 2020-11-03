@@ -9,5 +9,6 @@ import com.proj.alpha.empdetails.model.EmpDetails;
 public interface EmpDetailsRepository extends MongoRepository<EmpDetails, String> {
 
 	List<EmpDetails> findAllByStoreId(String id);
+	List<EmpDetails> findAllByLoginId(String loginId);
 
 }

@@ -4,6 +4,9 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -22,10 +25,11 @@ public class EmpLoginController {
 	@Autowired
 	IEmpLoginService empLoginService;
 	
-	@GetMapping("/fetch/all")
-	List<EmpLogin> getAllEmpLogin()
+	@GetMapping("/fetch/all/{page}/{size}")
+	Page<EmpLogin> getAllEmpLogin(@PathVariable int page, @PathVariable int size)
 	{
-		return empLoginService.getAllEmpLogin();
+		Pageable requestedPage = PageRequest.of(page,size);
+		return empLoginService.getAllEmpLoginByPage(requestedPage);
 	}
 	
 	@GetMapping("/fetch/{id}")
