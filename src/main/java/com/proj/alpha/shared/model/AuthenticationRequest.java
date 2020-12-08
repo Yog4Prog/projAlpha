@@ -13,6 +13,13 @@ public class AuthenticationRequest {
     public AuthenticationRequest() {
     }
 
+    @Override
+    public String toString() {
+        return "AuthenticationRequest{" +
+                "userName='" + this.userName + '\'' +
+                ", password='" + this.password + '\'' +
+                '}';
+    }
 
     public String getUserName() {
         return userName;
