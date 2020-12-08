@@ -1,19 +1,13 @@
 package com.proj.alpha;
 
 
-import com.proj.alpha.empdetails.model.EmpDetails;
-import com.proj.alpha.empdetails.model.EmpLogin;
-import com.proj.alpha.empdetails.service.IEmpDetailsService;
-import com.proj.alpha.empdetails.service.IEmpLoginService;
-import com.proj.alpha.shared.model.Address;
-import com.proj.alpha.storedetails.model.StoreDetails;
-import com.proj.alpha.storedetails.service.IStoreDetailsService;
+import com.proj.alpha.service.IEmpDetailsService;
+import com.proj.alpha.service.IEmpLoginService;
+import com.proj.alpha.service.IStoreDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import java.util.Date;
 
 
 @SpringBootApplication

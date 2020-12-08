@@ -23,9 +23,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="58f0efd1-8380-4b28-9496-87253136bf81" name="Default Changelist" comment="Adding code for JWT Authorization">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/proj/alpha/shared/controller/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/proj/alpha/shared/controller/AuthenticationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/proj/alpha/shared/model/AuthenticationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/proj/alpha/shared/model/AuthenticationRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/proj/alpha/AlphaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/proj/alpha/AlphaApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/proj/alpha/config/SecurityConfigurer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/proj/alpha/config/SecurityConfigurer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/proj/alpha/empdetails/controller/EmpDetailsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/proj/alpha/controller/EmpDetailsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/proj/alpha/empdetails/controller/EmpLoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/proj/alpha/controller/EmpLoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/proj/alpha/empdetails/data/EmpDetailsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/proj/alpha/data/EmpDetailsRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/proj/alpha/empdetails/data/EmpLoginRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/proj/alpha/data/EmpLoginRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/proj/alpha/empdetails/model/EmpDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/proj/alpha/model/EmpDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/proj/alpha/empdetails/model/EmpLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/proj/alpha/model/EmpLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/proj/alpha/empdetails/service/EmpDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/proj/alpha/service/EmpDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/proj/alpha/empdetails/service/EmpLoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/proj/alpha/service/EmpLoginService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/proj/alpha/empdetails/service/IEmpDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/proj/alpha/service/IEmpDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/proj/alpha/empdetails/service/IEmpLoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/proj/alpha/service/IEmpLoginService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/proj/alpha/shared/controller/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/proj/alpha/controller/AuthenticationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/proj/alpha/shared/model/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/proj/alpha/model/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/proj/alpha/shared/model/AuthenticationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/proj/alpha/model/AuthenticationRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/proj/alpha/shared/model/AuthenticationResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/proj/alpha/model/AuthenticationResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/proj/alpha/storedetails/controller/StoreDetailsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/proj/alpha/controller/StoreDetailsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/proj/alpha/storedetails/data/StoreDetailsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/proj/alpha/data/StoreDetailsRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/proj/alpha/storedetails/model/StoreDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/proj/alpha/model/StoreDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/proj/alpha/storedetails/service/IStoreDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/proj/alpha/service/IStoreDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/proj/alpha/storedetails/service/StoreDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/proj/alpha/service/StoreDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/proj/alpha/storedetails/service/StoreUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/proj/alpha/service/StoreUserDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/maven/com.proj.Alpha/com.proj.Alpha/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/maven/com.proj.Alpha/com.proj.Alpha/pom.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +96,19 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AlphaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="com.proj.Alpha" />
       <extension name="coverage">
@@ -108,8 +143,16 @@
       <workItem from="1604046187425" duration="4519000" />
       <workItem from="1604059108777" duration="4324000" />
       <workItem from="1604398950186" duration="614000" />
-      <workItem from="1607444011147" duration="532000" />
+      <workItem from="1607444011147" duration="1100000" />
     </task>
+    <task id="LOCAL-00001" summary="Adding code for JWT Authorization">
+      <created>1607444566526</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607444566526</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,6 +169,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Adding code for JWT Authorization" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding code for JWT Authorization" />
   </component>
   <component name="WindowStateProjectService">
     <state x="229" y="0" key="#Project_Structure" timestamp="1604399608629">
@@ -194,6 +241,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="404" y="105" width="540" height="524" key="StructurePopup/0.0.1366.728@0.0.1366.728" timestamp="1603798911234" />
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2" timestamp="1607444571836">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="240" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607444571836" />
+    <state x="667" y="119" width="585" height="801" key="find.popup" timestamp="1607444714305">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="667" y="119" width="585" height="801" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1607444714305" />
     <state x="65" y="0" key="new project wizard" timestamp="1603443619702">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
